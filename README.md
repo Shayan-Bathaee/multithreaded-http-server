@@ -1,4 +1,4 @@
-# CSE130 asgn4: Multithreaded HTTP Server | Shayan Bathaee | 5/30/2022
+# Multithreaded HTTP Server
 ## Files
 **httpserver_asgn2.c:** Contains the code for initializing the server, threads, and handling the connection between the server and the client. The functions defined in this file are `main`, `handle_connection`, and `thread_func`. 
 
