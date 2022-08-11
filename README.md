@@ -53,7 +53,8 @@ The function `handle_connection` takes a valid connection file descriptor and ha
 To create a server, type `./httpserver [-t threads] [-l logfile] <port>` into the terminal. It is recommended to use a port number above 2000. After doing so, a client can write a request in another terminal by writing the command `printf "<HTTP REQUEST>" | nc -N localhost <port>`. The port number must be the same in both commands for the program to work. 
 
 HTTP requests are formatted as follows: 
-    <method> /<file> HTTP/1.1\r\nContent-Length: <content-length>\r\nRequest-Id: <request-id>\r\n\r\n<message-body>`
+    
+    <method> /<file> HTTP/1.1\r\nContent-Length: <content-length>\r\nRequest-Id: <request-id>\r\n\r\n<message-body>
     
 GET requests do not need a content length or message body. The Request ID field can be ommitted, with the default being 0. The content length must match the length of the message body.
 
